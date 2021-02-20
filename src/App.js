@@ -1,25 +1,35 @@
-import logo from './logo.svg';
 import './App.css';
+import { useDispatch, useSelector } from 'react-redux'
+import BuildingType from "./Components/BuildingType"
+import FloorMany from "./Components/FloorMany"
+import MaterialType from "./Components/MaterialType"
+import ResultCalc from "./Components/Result"
+import Size from "./Components/Size"
+import { clearStore } from './Redux/RootReducer';
 
+//неизменный заголовок и изменяемая контентная часть
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const dispatch = useDispatch()
+    const count = useSelector(state => state.count);
+    const page = useSelector(state => state.page)
+
+    const cancelHandler = () => {
+        dispatch(clearStore())
+    }
+
+    return (
+        <div className="App">
+            <h1>Калькулятор цены конструкций</h1>
+            <div>
+                {page === 1 ? (<BuildingType dispatch={dispatch} cancelHandler={cancelHandler} count={count} />
+                ) : page === 2 ? (<FloorMany dispatch={dispatch} cancelHandler={cancelHandler} count={count} />
+                ) : page === 3 ? (<MaterialType dispatch={dispatch} cancelHandler={cancelHandler} count={count} />
+                ) : page === 4 ? (<Size dispatch={dispatch} cancelHandler={cancelHandler} count={count} />
+                ) : <ResultCalc cancelHandler={cancelHandler} />
+                }
+            </div>
+        </div>
+    );
 }
 
 export default App;

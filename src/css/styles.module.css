@@ -1,0 +1,30 @@
+.body {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+    max-width: 500px;
+    width: 500px;
+}
+.bodyHeader {
+    padding: 0.75rem 1.25rem;
+    background-color: rgba(0, 0, 0, 0.03);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+    margin-bottom: 0;
+}
+.question {
+    color: blue;
+}
+.bodyBody {
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1.25rem;
+}
+.bodyContent {
+    text-align: start;
+    text-decoration: underline;
+}
+.buttons{
+    padding: 10px;
+}
