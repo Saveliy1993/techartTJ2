@@ -43,23 +43,9 @@ export const rootReducer = (state = initialState, action) => {
 //ROOTactioncreators:
 export const clearStore = () => ({ type: CLEAR_STORE })
 
-//BUILDINGTYPE
-const buildingTypeAC = (data) => ({ type: BUILDING_TYPE, data })
-export const buildingType = (data) => (dispatch) => {
-    dispatch(buildingTypeAC(data))
-}
-
-//BUILDINGHIGHT
-const buildingFloorAC = (data) => ({ type: BUILDING_FLOOR, data })
-export const buildingFloor = (data) => (dispatch) => {
-    dispatch(buildingFloorAC(data))
-}
-
-//BuildingMaterial
-const buildingMaterialAC = (data) => ({ type: BUILDING_MATERIAL, data })
-export const buildingMaterial = (data) => (dispatch) => {
-    dispatch(buildingMaterialAC(data))
-}
+export const buildingType = (data) => ({ type: BUILDING_TYPE, data })
+export const buildingFloor = (data) => ({ type: BUILDING_FLOOR, data })
+export const buildingMaterial = (data) => ({ type: BUILDING_MATERIAL, data })
 
 //getresult
 export const getResult = (data) => async (dispatch, getState) => {
@@ -69,10 +55,8 @@ export const getResult = (data) => async (dispatch, getState) => {
             `https://data.techart.ru/lab/json/?building=${building}&height=${floor}&material=${material}&sizex=${data.sizeX}&sizey=${data.sizeY}`)
         const { result, message } = response.data
         dispatch({ type: GET_RESULT, data: { result, message } })
-
     } catch (err) {
         console.log(err)
     }
-
 }
 
