@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/techartTJ2/static/css/main.880a2e32.chunk.css",
+    "main.js": "/techartTJ2/static/js/main.4db0e2d1.chunk.js",
+    "main.js.map": "/techartTJ2/static/js/main.4db0e2d1.chunk.js.map",
+    "runtime-main.js": "/techartTJ2/static/js/runtime-main.65bfe6d1.js",
+    "runtime-main.js.map": "/techartTJ2/static/js/runtime-main.65bfe6d1.js.map",
+    "static/css/2.1e58ee36.chunk.css": "/techartTJ2/static/css/2.1e58ee36.chunk.css",
+    "static/js/2.e55172a8.chunk.js": "/techartTJ2/static/js/2.e55172a8.chunk.js",
+    "static/js/2.e55172a8.chunk.js.map": "/techartTJ2/static/js/2.e55172a8.chunk.js.map",
+    "static/js/3.159dbe97.chunk.js": "/techartTJ2/static/js/3.159dbe97.chunk.js",
+    "static/js/3.159dbe97.chunk.js.map": "/techartTJ2/static/js/3.159dbe97.chunk.js.map",
+    "index.html": "/techartTJ2/index.html",
+    "static/css/2.1e58ee36.chunk.css.map": "/techartTJ2/static/css/2.1e58ee36.chunk.css.map",
+    "static/css/main.880a2e32.chunk.css.map": "/techartTJ2/static/css/main.880a2e32.chunk.css.map",
+    "static/js/2.e55172a8.chunk.js.LICENSE.txt": "/techartTJ2/static/js/2.e55172a8.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.65bfe6d1.js",
+    "static/css/2.1e58ee36.chunk.css",
+    "static/js/2.e55172a8.chunk.js",
+    "static/css/main.880a2e32.chunk.css",
+    "static/js/main.4db0e2d1.chunk.js"
+  ]
+}
